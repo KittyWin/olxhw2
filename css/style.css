@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  background-color: rgb(4, 49, 54);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 100px;
+}
+
+.olx_html {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+}
+.o {
+  height: 40px;
+  width: 40px;
+  border-radius: 45% 45% 45% 45% / 45% 45% 45% 45%;
+  background-color: aqua;
+  position: relative;
+}
+.o::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(4, 49, 54);
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.l {
+  height: 50px;
+  width: 10px;
+  background-color: aqua;
+}
+.x {
+  background-color: aqua;
+  height: 25px;
+  width: 25px;
+  clip-path: polygon(
+    35.68% 1.03%,
+    0% 0%,
+    0% 33.08%,
+    21.17% 50%,
+    0% 66.91%,
+    0% 100%,
+    36.94% 99.74%,
+    50.18% 71.28%,
+    65.41% 100%,
+    100% 100%,
+    100% 63.83%,
+    83.51% 49.23%,
+    100% 33.08%,
+    100% 0%,
+    63.96% 0%,
+    50.18% 26.36%
+  );
+}
+.language{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+margin-left: 200px;
+}
+.linevertical{
+    height: 15px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+button{
+    border: none;
+    background-color: rgb(4, 49, 54);
+    color: white;
+    
+}
+.rus{
+    color: rgba(255, 255, 255, 0.4);    
+}
+i{
+  font-size: 20px;
+  color: white;
+}
+h2{
+  color: white;
+  font-size: 20px;
+}
+.comment{
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-left: 50px;
+}
+.heart{
+  margin-left: 50px;
+}
+.user{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-left: 50px;
+}
+.ob{
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  margin-left: 40px;
+  border-radius: 5px;
+  border: 5px solid white;
+  transition: 0.5s;
+}
+.ob:hover {
+  background: rgb(4, 49, 54);
+}
+.ob:hover .obya{
+  color: white;
+}
+.obya{
+  font-size: 17px;
+  color:  rgb(4, 49, 54);
+  
+}
+.comment:hover .coment__title,
+.comment:hover .fa-regular{
+  color: rgba(255, 255, 255, 0.4);
+}
+.heart:hover .fa-heart{
+  color: rgba(255, 255, 255, 0.4);
+}
+.user:hover .coment__title,
+.user:hover .fa-user{
+  color: rgba(255, 255, 255, 0.4);
+}
